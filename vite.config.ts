@@ -6,7 +6,7 @@ const manifest = defineManifest({
   manifest_version: 3,
   name: 'Framer Japanese Localization 1.0.0',
   short_name: 'Framer JP',
-  description: 'Translates Framer\'s UI into Japanese. Over 1,200 terms across design panels, navigation, settings, and more are translated in real time.',
+  description: 'Translates Framer\'s UI into Japanese. Design panels, navigation, settings, and more are translated in real time.',
   version: '1.0.0',
   icons: {
     "16":  "icons/icon16.png",
