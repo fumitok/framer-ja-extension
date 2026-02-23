@@ -4,7 +4,7 @@ import { crx, defineManifest } from '@crxjs/vite-plugin'
 // Extension manifest configuration
 const manifest = defineManifest({
   manifest_version: 3,
-  name: 'Framer Japanese Localization 1.0.0',
+  name: 'Framer Japanese Localization',
   short_name: 'Framer JP',
   description: 'Translates Framer\'s UI into Japanese. Design panels, navigation, settings, and more are translated in real time.',
   version: '1.0.0',

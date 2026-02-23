@@ -1,4 +1,4 @@
-# Framer Japanese Localization 1.0.0
+# Framer Japanese Localization
 
 A Chrome extension that translates Framer's English UI into Japanese. Design panels, navigation, workspace, animation settings, and more are translated in real time.
 
