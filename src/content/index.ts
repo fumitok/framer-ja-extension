@@ -1239,6 +1239,57 @@ const translations: Record<string, string> = {
   "New with AI": "AIで新規作成",
   "Blockquote": "引用",
   "Table": "テーブル",
+
+  // プロジェクト・フォルダー
+  "Folder": "フォルダー",
+  "New Folder…": "フォルダーを新規作成…",
+  "New Project": "新規プロジェクト",
+  "Last viewed by me": "最近閲覧した",
+  "Last edited": "最終編集",
+  "Alphabetically": "アルファベット順",
+  "Reload": "再読み込み",
+  "Fullscreen": "フルスクリーン",
+  "Team members": "チームメンバー",
+  "Invite your team": "チームを招待",
+
+  // 貼り付け・インポート
+  "HTML Paste": "HTML貼り付け",
+  ") when navigating between pages": "）ページ間のナビゲーション時",
+
+  // アナリティクス・API
+  "Google Analytics Measurement ID": "GoogleアナリティクスのID",
+  "API Keys": "APIキー",
+  "Add API Key": "APIキーを追加",
+  "Server API": "サーバーAPI",
+  "and more": "その他",
+  "Publish your website to": "ウェブサイトを公開して",
+  "track and view insights.": "インサイトを追跡・確認しましょう。",
+  "View Analytics": "アナリティクスを表示",
+
+  // A/Bテスト
+  "A/B test": "A/Bテスト",
+  "Control": "コントロール",
+  "Select the page that you want to test.": "テストするページを選択してください。",
+  "needs configuration.": "設定が必要です。",
+  "Configure": "設定する",
+  "New A/B Test…": "A/Bテストを新規作成…",
+  "Add Variant": "バリアントを追加",
+
+  // ページ管理
+  "Home Page": "ホームページ",
+  "Set Home Page": "ホームページに設定",
+  "Template Page": "テンプレートページ",
+  "New CMS Page": "新規CMSページ",
+  "Replace This Page With…": "このページを置き換える…",
+  "Replace This Page": "このページを置き換え",
+  "Select a page to replace": "置き換えるページを選択",
+  "Convert to CMS Page…": "CMSページに変換…",
+
+  // カルーセル（#付きフォーマット）
+  "Carousel Image #1": "カルーセル画像1",
+  "Carousel Image #2": "カルーセル画像2",
+  "Carousel Image #3": "カルーセル画像3",
+  "Carousel Image #4": "カルーセル画像4",
 };
 
 // 重複処理防止：翻訳済みのノードを記録
