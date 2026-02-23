@@ -1312,7 +1312,6 @@ const translations: Record<string, string> = {
   "Heading XS": "見出し XS",
 
   // Misc
-  "Work": "ワーク",
   "Export via API (Employee)": "APIでエクスポート (Employee)",
 };
 
