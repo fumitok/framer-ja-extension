@@ -263,7 +263,7 @@ const translations: Record<string, string> = {
   "Add": "追加",
   "Add Collection": "コレクションを追加",
   "Add Locale": "ロケールを追加",
-  "Add Script": "スクリプトを追加",
+  "Add Script": "追加",
   "Add Step": "ステップを追加",
   "Add a tracking ID": "トラッキングIDを追加",
   "Add…": "追加…",
@@ -631,7 +631,7 @@ const translations: Record<string, string> = {
   "Show UI": "UIを表示",
   "Show page in Site Search": "サイト検索にページを表示",
   "Show page in search engines": "検索エンジンにページを表示",
-  "Site Description": "サイト説明",
+  "Site Description": "説明",
   "Site Images": "サイト画像",
   "Site Language": "サイト言語",
   "Site Title": "サイトタイトル",
@@ -703,7 +703,7 @@ const translations: Record<string, string> = {
   "Waitlist": "ウェイトリスト",
   "Watch Tutorials": "チュートリアルを見る",
   "Weight": "太さ",
-  "Well-Known Files": "既知のファイル",
+  "Well-Known Files": "共通ファイル",
   "Words": "単語",
   "Workshop": "ワークショップ",
   "Wrap": "折り返し",
@@ -1227,7 +1227,7 @@ const translations: Record<string, string> = {
   "Invite your team": "チームを招待",
 
   // Paste & import
-  "HTML Paste": "HTML貼り付け",
+  "HTML Paste": "HTMLペースト",
   ") when navigating between pages": "）ページ間のナビゲーション時",
 
   // Analytics & API
