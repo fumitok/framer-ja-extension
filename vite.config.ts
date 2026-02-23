@@ -6,7 +6,7 @@ const manifest = defineManifest({
   manifest_version: 3,
   name: 'Framer 日本語UI',
   short_name: 'Framer JP',
-  description: 'Framer のUIを日本語化するChrome拡張機能。デザインパネル・ナビゲーション・設定など700以上の用語を日本語に翻訳します。',
+  description: 'Framer のUIを日本語化するChrome拡張機能。デザインパネル・ナビゲーション・設定など750以上の用語を日本語に翻訳します。',
   version: '1.0.0',
   icons: {
     "16":  "icons/icon16.png",
