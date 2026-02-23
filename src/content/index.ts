@@ -985,6 +985,8 @@ const translations: Record<string, string> = {
   "Modals": "モーダル",
   "toasts": "トースト",
   "videos": "動画",
+  "Scroll Sections": "スクロールセクション",
+  "Add Transform": "トランスフォームを追加",
   "Collision": "衝突",
   "Editing": "編集中",
 
@@ -1176,6 +1178,34 @@ const translations: Record<string, string> = {
   "Variable": "変数",
   "When Yes": "はいの場合",
   "When No": "いいえの場合",
+  "Home Page Variables": "ホームページ変数",
+  "Optional": "任意",
+  "Query Param": "クエリパラメータ",
+  "Plain Text": "プレーンテキスト",
+  "Toggle": "トグル",
+  "Number": "数値",
+  "Count": "カウント",
+  "Min": "最小",
+  "Max": "最大",
+  "Step": "ステップ",
+  "Percent %": "パーセント %",
+  "Degrees °": "度 °",
+  "Starts With": "から始まる",
+  "Doesn't Start With": "から始まらない",
+  "Ends With": "で終わる",
+  "Doesn't End With": "で終わらない",
+  "Contains": "を含む",
+  "Doesn't Contain": "を含まない",
+  "Greater Than": "より大きい",
+  "Less Than": "より小さい",
+  "Less Than or Equal": "以下",
+  "Greater Than or Equal": "以上",
+  "Is Even": "偶数",
+  "Is Odd": "奇数",
+  "As Plain Text": "プレーンテキストとして",
+  "Format Number": "数値フォーマット",
+  "Then": "その場合",
+  "Remove": "削除",
   "REM Typography": "REMタイポグラフィ",
 
   // Animation effects
@@ -1191,6 +1221,15 @@ const translations: Record<string, string> = {
   "Pause": "一時停止",
   "Animate nested sections": "ネストされたセクションをアニメーション",
   "Updating Pages": "ページを更新中",
+  "Text Effect": "テキストエフェクト",
+  "Flip": "フリップ",
+  "Shake": "シェイク",
+  "Shoot": "シュート",
+  "Stagger": "スタッガー",
+  "Per": "単位",
+  "Character": "文字",
+  "Word": "単語",
+  "Element": "要素",
 
   // Stroke styles
   "Solid": "実線",
@@ -1265,6 +1304,17 @@ const translations: Record<string, string> = {
   "Carousel Image #2": "カルーセル画像2",
   "Carousel Image #3": "カルーセル画像3",
   "Carousel Image #4": "カルーセル画像4",
+
+  // Text styles
+  "Text Styles": "テキストスタイル",
+  "Heading L": "見出し L",
+  "Heading M": "見出し M",
+  "Heading S": "見出し S",
+  "Heading XS": "見出し XS",
+
+  // Misc
+  "Work": "ワーク",
+  "Export via API (Employee)": "APIでエクスポート (Employee)",
 };
 
 // Deduplication: track already-translated nodes
