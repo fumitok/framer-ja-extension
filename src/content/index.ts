@@ -65,7 +65,7 @@ const translations: Record<string, string> = {
   // プロパティパネル - タイポグラフィ
   "Font": "フォント",
   "Font Size": "フォントサイズ",
-  "Font Weight": "フォント太さ",
+  "Font Weight": "フォントウェイト",
   "Line Height": "行の高さ",
   "Letter Spacing": "文字間隔",
   "Text Align": "テキスト整列",
@@ -75,8 +75,8 @@ const translations: Record<string, string> = {
   // プロパティパネル - その他
   "Transform": "変形",
   "Rotation": "回転",
-  "Scale": "拡大縮小",
-  "Skew": "傾斜",
+  "Scale": "スケール",
+  "Skew": "スキュー",
   "Overflow": "はみ出し",
   "Z Index": "Z順序",
   "Pointer Events": "ポインターイベント",
@@ -135,7 +135,7 @@ const translations: Record<string, string> = {
   // アニメーション
   "Animation": "アニメーション",
   "Transition": "トランジション",
-  "Duration": "継続時間",
+  "Duration": "時間",
   "Delay": "遅延",
   "Easing": "イージング",
   "Timing": "タイミング",
@@ -164,7 +164,7 @@ const translations: Record<string, string> = {
   "Saturation": "彩度",
   "Brightness": "明度",
   "Alpha": "アルファ",
-  "Hex": "16進数",
+  "Hex": "HEX",
   "RGB": "RGB",
   "HSL": "HSL",
   
@@ -174,8 +174,8 @@ const translations: Record<string, string> = {
   "Audio": "音声",
   "Fit": "フィット",
   "Cover": "カバー",
-  "Contain": "含む",
-  "Fill Image": "塗りつぶし",
+  "Contain": "全体表示",
+  "Fill Image": "画像で塗りつぶし",
   
   // コンポーネント関連
   "Instance": "インスタンス",
@@ -305,7 +305,7 @@ const translations: Record<string, string> = {
   "New Component": "コンポーネントを新規作成",
   "New File": "ファイルを新規作成",
   "New File…": "ファイルを新規作成…",
-  "New Folder": "フォルダを新規作成",
+  "New Folder": "フォルダーを新規作成",
   "New Issue": "課題を新規作成",
   "New Item": "アイテムを新規作成",
   "New Locale": "ロケールを新規作成",
@@ -357,7 +357,7 @@ const translations: Record<string, string> = {
   "Annual Only": "年間のみ",
   "Any": "任意",
   "Anyone with link can view": "リンクを持つ人は誰でも閲覧可能",
-  "Appear": "表示",
+  "Appear": "出現",
   "Apple Music": "Apple Music",
   "Apple Podcasts": "Apple Podcasts",
   "Apple Touch Icon": "Apple Touchアイコン",
@@ -422,7 +422,7 @@ const translations: Record<string, string> = {
   "Domains": "ドメイン",
   "Dot Lottie": "Dot Lottie",
   "Draft": "下書き",
-  "Ease": "イージング",
+  "Ease": "イーズ",
   "Ease In": "イーズイン",
   "Ease In Out": "イーズインアウト",
   "Ease Out": "イーズアウト",
@@ -505,7 +505,7 @@ const translations: Record<string, string> = {
   "Inherit": "継承",
   "Inline Code": "インラインコード",
   "Instagram": "Instagram",
-  "Instant": "即座",
+  "Instant": "即時",
   "Interactions": "インタラクション",
   "Interactive": "インタラクティブ",
   "Language": "言語",
@@ -645,9 +645,9 @@ const translations: Record<string, string> = {
   "Sort Alphabetically": "アルファベット順に並び替え",
   "Sort Layers Alphabetically": "レイヤーをアルファベット順に並び替え",
   "Sources": "ソース",
-  "Space Around": "周囲にスペース",
-  "Space Between": "間隔",
-  "Space Evenly": "均等にスペース",
+  "Space Around": "均等（周囲）",
+  "Space Between": "均等（両端）",
+  "Space Evenly": "完全均等",
   "Spring": "スプリング",
   "Stack": "スタック",
   "Staging": "ステージング",
@@ -658,7 +658,7 @@ const translations: Record<string, string> = {
   "Start with AI": "AIで開始",
   "Status": "ステータス",
   "Steps": "ステップ",
-  "Stiffness": "剛性",
+  "Stiffness": "強さ",
   "Styleguide": "スタイルガイド",
   "Styles": "スタイル",
   "Subscribe": "購読",
@@ -697,7 +697,7 @@ const translations: Record<string, string> = {
   "Versions": "バージョン",
   "Viewing now": "現在閲覧中",
   "Vimeo": "Vimeo",
-  "Visible": "表示",
+  "Visible": "表示中",
   "Visitors": "訪問者",
   "Visitors and Pageviews": "訪問者とページビュー",
   "Waitlist": "ウェイトリスト",
@@ -751,10 +751,10 @@ const translations: Record<string, string> = {
   // ブレンドモード
   "Blending": "ブレンド",
   "Normal": "通常",
-  "Darken": "暗く",
+  "Darken": "比較（暗）",
   "Multiply": "乗算",
   "Color Burn": "焼き込みカラー",
-  "Lighten": "明るく",
+  "Lighten": "比較（明）",
   "Screen": "スクリーン",
   "Color Dodge": "覆い焼きカラー",
   "Overlay": "オーバーレイ",
@@ -796,8 +796,8 @@ const translations: Record<string, string> = {
   "Max Height": "最大高さ",
 
   // オーバーフロー
-  "Overflow X": "横方向のはみ出し",
-  "Overflow Y": "縦方向のはみ出し",
+  "Overflow X": "横のはみ出し",
+  "Overflow Y": "縦のはみ出し",
 
   // カーソル設定
   "Web Cursor": "Webカーソル",
@@ -835,7 +835,7 @@ const translations: Record<string, string> = {
 
   // テキスト
   "Balance": "バランス",
-  "Truncate": "切り捨て",
+  "Truncate": "省略",
 
   // API・フェッチ
   "Add Fetch": "フェッチを追加",
@@ -979,9 +979,9 @@ const translations: Record<string, string> = {
   "Section in View": "セクションが表示されたとき",
   "Replay": "リプレイ",
   "Preset": "プリセット",
-  "Enter": "開始",
-  "Exit": "終了",
-  "Enter & Exit": "開始と終了",
+  "Enter": "登場",
+  "Exit": "退場",
+  "Enter & Exit": "登場と退場",
   "Fade In": "フェードイン",
   "Fade Out": "フェードアウト",
   "Scale In": "スケールイン",
@@ -1205,8 +1205,8 @@ const translations: Record<string, string> = {
   "REM Typography": "REMタイポグラフィ",
 
   // アニメーション・エフェクト
-  "Appear Effect": "表示エフェクト",
-  "Enter Effect": "開始エフェクト",
+  "Appear Effect": "出現エフェクト",
+  "Enter Effect": "登場エフェクト",
   "Hover Effect": "ホバーエフェクト",
   "Loop Effect": "ループエフェクト",
   "Drag Effect": "ドラッグエフェクト",
@@ -1225,7 +1225,7 @@ const translations: Record<string, string> = {
   "Double": "二重線",
 
   // その他プロパティ
-  "Stretch": "引き伸ばし",
+  "Stretch": "ストレッチ",
   "Alt Text": "代替テキスト",
   "Preserve": "保持",
   "Image Rendering": "画像レンダリング",
