@@ -1312,6 +1312,84 @@ const translations: Record<string, string> = {
 
   // Misc
   "Export via API (Employee)": "APIでエクスポート (Employee)",
+
+  // Conditions & logic
+  "No Drop": "ドロップ不可",
+  "When": "のとき",
+  "Set": "設定",
+  "Add Condition": "条件を追加",
+
+  // Color styles
+  "New Color Style": "新しいカラースタイル",
+
+  // Warning messages
+  "Text Effects do not work with Gradients": "テキストエフェクトはグラデーションに対応していません",
+  "selected filter or time period.": "選択したフィルターまたは期間。",
+
+  // Analytics
+  "Today": "今日",
+  "Yesterday": "昨日",
+  "Last 7 days": "過去7日間",
+  "PM": "PM",
+  "UTM": "UTM",
+  "Campaign": "キャンペーン",
+  "Source": "ソース",
+  "Term": "ターム",
+  "Entry": "エントリー",
+  "Browser": "ブラウザ",
+  "OS": "OS",
+  "Totals": "合計",
+
+  // CMS
+  "No Collection Items": "コレクションアイテムがありません",
+
+  // Component properties
+  "Button Icon": "ボタンアイコン",
+  "Secondary": "セカンダリ",
+  "Export Button Icon": "ボタンアイコンをエクスポート",
+  "Speed": "速度",
+  "From": "から",
+  "Set Variant…": "バリアントを設定…",
+  "To": "まで",
+  "Fade In Out": "フェードインアウト",
+  "Transparent": "透明",
+  "Disabled": "無効",
+  "Dismissible": "閉じられる",
+  "Page Scroll": "ページスクロール",
+  "Block": "ブロック",
+  "Pressed": "プレス中",
+
+  // Template variables
+  "Old Home Page Variables": "旧ホームページ変数",
+  "Old Home": "旧ホーム",
+
+  // Template export fields
+  "Export Hero": "ヒーローをエクスポート",
+  "Work Item": "ワークアイテム",
+  "Case Thumbnail": "ケースサムネイル",
+  "Project Title": "プロジェクトタイトル",
+  "Client Name": "クライアント名",
+  "Main Image / Thumbnail Image": "メイン画像 / サムネイル画像",
+  "Export Project Card": "プロジェクトカードをエクスポート",
+
+  // Grid span
+  "Span 1": "スパン1",
+  "Span 2": "スパン2",
+  "Span 3": "スパン3",
+  "Span 4": "スパン4",
+  "Span 5": "スパン5",
+  "Span 6": "スパン6",
+  "Span 7": "スパン7",
+  "Span 8": "スパン8",
+  "Span 9": "スパン9",
+  "Span 10": "スパン10",
+  "Span 11": "スパン11",
+  "Span 12": "スパン12",
+  "Span All": "全スパン",
+
+  // Variant state labels
+  "· Primary": "· プライマリ",
+  "· Hover": "· ホバー",
 };
 
 // Deduplication: track already-translated nodes
