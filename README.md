@@ -44,7 +44,7 @@ A Chrome extension that translates Framer's English UI into Japanese. Design pan
 ### Finding untranslated terms
 
 1. Open Framer with the extension installed
-2. Open Chrome DevTools console (F12)
+2. Open Chrome DevTools console (Cmd + Option + J)
 3. Type `window.missingList` and press Enter
 4. An array of untranslated English terms will be displayed
 
