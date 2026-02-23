@@ -37,7 +37,7 @@ const translations: Record<string, string> = {
   "Corner Radius": "角丸",
   "Border Radius": "角丸",
   "Opacity": "不透明度",
-  "Blend Mode": "合成モード",
+  "Blend Mode": "ブレンドモード",
   "Effects": "エフェクト",
   "Shadow": "影",
   "Blur": "ぼかし",
@@ -77,8 +77,8 @@ const translations: Record<string, string> = {
   "Rotation": "回転",
   "Scale": "スケール",
   "Skew": "スキュー",
-  "Overflow": "はみ出し",
-  "Z Index": "Z順序",
+  "Overflow": "オーバーフロー",
+  "Z Index": "Zインデックス",
   "Pointer Events": "ポインターイベント",
   "Cursor": "カーソル",
   "Display": "表示",
@@ -122,7 +122,7 @@ const translations: Record<string, string> = {
   "Relative": "相対",
   "Absolute": "絶対",
   "Sticky": "スティッキー",
-  "Static": "静的",
+  "Static": "スタティック",
   
   // 状態・モード
   "Preview": "プレビュー",
@@ -796,8 +796,8 @@ const translations: Record<string, string> = {
   "Max Height": "最大高さ",
 
   // オーバーフロー
-  "Overflow X": "横のはみ出し",
-  "Overflow Y": "縦のはみ出し",
+  "Overflow X": "オーバーフロー X",
+  "Overflow Y": "オーバーフロー Y",
 
   // カーソル設定
   "Web Cursor": "Webカーソル",
