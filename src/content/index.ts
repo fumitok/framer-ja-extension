@@ -905,7 +905,7 @@ const translations: Record<string, string> = {
 
   // UI & upload
   "Upload Logo": "ロゴをアップロード",
-  "Upload Image": "画像をアップロード",
+  "Upload Image": "アップロード",
   "Please upload an image that is": "以下の条件の画像をアップロードしてください",
   "min. 200x200px": "最小200×200px",
   "Min. 200x200px": "最小200×200px",
@@ -1021,7 +1021,7 @@ const translations: Record<string, string> = {
   "Transfer": "転送",
   "Invite Collaborators…": "コラボレーターを招待…",
   "Import from Figma…": "Figmaからインポート…",
-  "Upload Image…": "画像をアップロード…",
+  "Upload Image…": "アップロード…",
   "Upload Video…": "動画をアップロード…",
   "Publish Site": "サイトを公開",
   "Open Site": "サイトを開く",
