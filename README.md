@@ -1,12 +1,15 @@
 # Framer 日本語UI Chrome拡張機能
 
-Framer の英語UIを日本語に翻訳するChrome拡張機能です。デザインパネル・ナビゲーション・設定など700以上の用語をリアルタイムで日本語化します。
+Framer の英語UIを日本語に翻訳するChrome拡張機能です。デザインパネル・ナビゲーション・ワークスペース・アニメーション設定など900以上の用語をリアルタイムで日本語化します。
 
 ## 機能
 
-- デザインパネルの用語を日本語化（幅・高さ・余白・フォントなど）
+- デザインパネルの用語を日本語化（幅・高さ・余白・フォント・エフェクトなど）
 - ナビゲーション・メニューを日本語化
 - CMS・アナリティクス・設定画面を日本語化
+- ワークスペース・チーム管理画面を日本語化
+- アニメーションプリセット・インタラクション設定を日本語化
+- ブレンドモード・フィルター・3Dトランスフォームを日本語化
 - MutationObserver による動的コンテンツへの対応
 - 未翻訳の用語を `window.missingList` でコンソールから確認可能
 
@@ -14,7 +17,7 @@ Framer の英語UIを日本語に翻訳するChrome拡張機能です。デザ�
 
 1. このリポジトリをクローン
    ```bash
-   git clone https://github.com/your-username/framer-ja-extension.git
+   git clone https://github.com/fumitok/framer-ja-extension.git
    cd framer-ja-extension
    ```
 
@@ -56,7 +59,14 @@ const translations: Record<string, string> = {
 };
 ```
 
-追加後に `npm run build` して再読み込みしてください。
+追加後に `npm run build` してから Chrome の拡張機能ページで再読み込みしてください。
+
+## ブランチ構成
+
+| ブランチ | 用途 |
+|---------|------|
+| `main` | 安定版・リリース用 |
+| `develop` | 開発・翻訳追加用 |
 
 ## ビルド
 
