@@ -736,6 +736,7 @@ const translations: Record<string, string> = {
   "Bounce": "バウンス",
   
   // Shapes
+  "Rounded": "角丸",
   "Arc": "アーク",
   "Bezier": "ベジエ",
   "Oval": "楕円",
