@@ -490,7 +490,6 @@ const translations: Record<string, string> = {
   "Heading 4": "見出し4",
   "Heading 5": "見出し5",
   "Heading 6": "見出し6",
-  "Hero": "ヒーロー",
   "Hidden": "非表示",
   "Home": "ホーム",
   "Home Page Settings": "ホームページ設定",
