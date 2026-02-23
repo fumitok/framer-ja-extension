@@ -4,7 +4,7 @@ import { crx, defineManifest } from '@crxjs/vite-plugin'
 // 拡張機能の設定（マニフェスト）
 const manifest = defineManifest({
   manifest_version: 3,
-  name: 'Framer 日本語UI',
+  name: 'Framer Japanese Localization 1.0.0',
   short_name: 'Framer JP',
   description: 'Framer のUIを日本語化するChrome拡張機能。デザインパネル・ナビゲーション・設定など900以上の用語を日本語に翻訳します。',
   version: '1.0.0',
