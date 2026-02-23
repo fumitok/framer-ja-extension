@@ -661,7 +661,7 @@ const translations: Record<string, string> = {
   "Stiffness": "強さ",
   "Styleguide": "スタイルガイド",
   "Styles": "スタイル",
-  "Subscribe": "購読",
+  "Subscribe": "購入",
   "Tag": "タグ",
   "Teaser": "ティーザー",
   "Templates": "テンプレート",
