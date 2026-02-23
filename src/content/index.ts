@@ -1215,6 +1215,7 @@ const translations: Record<string, string> = {
   "Table": "テーブル",
 
   // Projects & folders
+  "Empty Archive": "アーカイブを空にする",
   "Folder": "フォルダー",
   "New Folder…": "フォルダーを新規作成…",
   "New Project": "新規プロジェクト",
