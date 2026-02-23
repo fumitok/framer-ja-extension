@@ -1,12 +1,12 @@
 // src/content/index.ts
 
-console.log("🚀 Framer Japanese Booster: 起動");
+console.log("🚀 Framer Japanese Booster: started");
 
 /**
- * 1. 翻訳辞書 (提供いただいた全リストを保持)
+ * Translation dictionary
  */
 const translations: Record<string, string> = {
-  // メインナビゲーション
+  // Main navigation
   "Pages": "ページ",
   "Layers": "レイヤー",
   "Assets": "アセット",
@@ -14,7 +14,7 @@ const translations: Record<string, string> = {
   "Insert": "挿入",
   "Layout": "レイアウト",
   
-  // プロパティパネル - サイズ・位置
+  // Properties panel - size & position
   "Width": "幅",
   "Height": "高さ",
   "Position": "位置",
@@ -28,7 +28,7 @@ const translations: Record<string, string> = {
   "Center": "中央",
   "Constraints": "制約",
   
-  // プロパティパネル - スタイル
+  // Properties panel - style
   "Fill": "塗り",
   "Stroke": "線",
   "Background": "背景",
@@ -43,7 +43,7 @@ const translations: Record<string, string> = {
   "Blur": "ぼかし",
   "Gradient": "グラデーション",
   
-  // プロパティパネル - レイアウト
+  // Properties panel - layout
   "Padding": "余白",
   "Margin": "マージン",
   "Gap": "間隔",
@@ -62,7 +62,7 @@ const translations: Record<string, string> = {
   "Grid Template": "グリッドテンプレート",
   "Grid Gap": "グリッド間隔",
   
-  // プロパティパネル - タイポグラフィ
+  // Properties panel - typography
   "Font": "フォント",
   "Font Size": "フォントサイズ",
   "Font Weight": "フォントウェイト",
@@ -72,7 +72,7 @@ const translations: Record<string, string> = {
   "Text Transform": "テキスト変換",
   "Text Decoration": "テキスト装飾",
   
-  // プロパティパネル - その他
+  // Properties panel - misc
   "Transform": "変形",
   "Rotation": "回転",
   "Scale": "スケール",
@@ -86,7 +86,7 @@ const translations: Record<string, string> = {
   "Clip": "クリップ",
   "Mask": "マスク",
   
-  // アクション・操作
+  // Actions
   "Edit": "編集",
   "Delete": "削除",
   "Duplicate": "複製",
@@ -101,7 +101,7 @@ const translations: Record<string, string> = {
   "Hide": "非表示",
   "Show": "表示",
   
-  // その他のUI要素
+  // General UI
   "Settings": "設定",
   "Preferences": "環境設定",
   "Export": "エクスポート",
@@ -124,7 +124,7 @@ const translations: Record<string, string> = {
   "Sticky": "スティッキー",
   "Static": "スタティック",
   
-  // 状態・モード
+  // States & modes
   "Preview": "プレビュー",
   "Design": "デザイン",
   "Code": "コード",
@@ -132,7 +132,7 @@ const translations: Record<string, string> = {
   "Responsive": "レスポンシブ",
   "Breakpoint": "ブレークポイント",
   
-  // アニメーション
+  // Animation
   "Animation": "アニメーション",
   "Transition": "トランジション",
   "Duration": "時間",
@@ -140,7 +140,7 @@ const translations: Record<string, string> = {
   "Easing": "イージング",
   "Timing": "タイミング",
   
-  // インタラクション
+  // Interactions
   "Interaction": "インタラクション",
   "Trigger": "トリガー",
   "Action": "アクション",
@@ -152,13 +152,13 @@ const translations: Record<string, string> = {
   "Open Overlay": "オーバーレイを開く",
   "Close Overlay": "オーバーレイを閉じる",
   
-  // データ・変数
+  // Data & variables
   "Variables": "変数",
   "Data": "データ",
   "Binding": "バインディング",
   "Expression": "式",
   
-  // カラー
+  // Color
   "Color": "色",
   "Hue": "色相",
   "Saturation": "彩度",
@@ -168,7 +168,7 @@ const translations: Record<string, string> = {
   "RGB": "RGB",
   "HSL": "HSL",
   
-  // 画像・メディア
+  // Images & media
   "Image": "画像",
   "Video": "動画",
   "Audio": "音声",
@@ -177,7 +177,7 @@ const translations: Record<string, string> = {
   "Contain": "全体表示",
   "Fill Image": "画像で塗りつぶし",
   
-  // コンポーネント関連
+  // Components
   "Instance": "インスタンス",
   "Override": "オーバーライド",
   "Variant": "バリアント",
@@ -185,7 +185,7 @@ const translations: Record<string, string> = {
   "Property": "プロパティ",
   "Slot": "スロット",
   
-  // レスポンシブ・ブレークポイント
+  // Responsive & breakpoints
   "Mobile": "モバイル",
   "Phone": "モバイル",
   "Tablet": "タブレット",
@@ -193,7 +193,7 @@ const translations: Record<string, string> = {
   "Viewport": "ビューポート",
   "Device": "デバイス",
   
-  // その他
+  // Misc
   "Search": "検索",
   "Filter": "フィルター",
   "Sort": "並び替え",
@@ -212,7 +212,7 @@ const translations: Record<string, string> = {
   "vw": "vw",
   "Archive": "アーカイブ",
 
-  // コメント・コラボレーション
+  // Comments & collaboration
   "Comment": "コメント",
   "Comments": "コメント",
   "Resolve": "解決",
@@ -220,7 +220,7 @@ const translations: Record<string, string> = {
   "Reply": "返信",
   "Mention": "メンション",
 
-  // チーム・ワークスペース
+  // Team & workspace
   "Team": "チーム",
   "Workspace": "ワークスペース",
   "Invite Member": "メンバーを招待",
@@ -229,27 +229,27 @@ const translations: Record<string, string> = {
   "Editor": "エディター",
   "Admin": "管理者",
 
-  // バージョン履歴
+  // Version history
   "Version History": "バージョン履歴",
   "Restore Version": "バージョンを復元",
   "Auto-saved": "自動保存済み",
 
-  // スナップ
+  // Snap
   "Snap": "スナップ",
   "Snap to Grid": "グリッドにスナップ",
   "Snap to Objects": "オブジェクトにスナップ",
   "Snap to Pixel": "ピクセルにスナップ",
 
-  // デザイントークン
+  // Design tokens
   "Design Token": "デザイントークン",
   "Token": "トークン",
   "Tokens": "トークン",
 
-  // コードコンポーネント
+  // Code components
   "Code Component": "コードコンポーネント",
   "Smart Component": "スマートコンポーネント",
 
-  // エラー・ステータス
+  // Errors & status
   "Error": "エラー",
   "Warning": "警告",
   "Loading": "読み込み中",
@@ -259,7 +259,7 @@ const translations: Record<string, string> = {
   "Offline": "オフライン",
   "Online": "オンライン",
   
-  // UI要素・アクション
+  // UI elements & actions
   "Add": "追加",
   "Add Collection": "コレクションを追加",
   "Add Locale": "ロケールを追加",
@@ -342,7 +342,7 @@ const translations: Record<string, string> = {
   "Zoom to 100%": "100%にズーム",
   "Zoom to Fit": "フィットにズーム",
   
-  // 機能・機能名
+  // Features
   "A/B Tests": "A/Bテスト",
   "A/B testing": "A/Bテスト",
   "AI Style": "AIスタイル",
@@ -710,7 +710,7 @@ const translations: Record<string, string> = {
   "Year": "年",
   "YouTube": "YouTube",
   
-  // 日付・時刻
+  // Dates & times
   "10d ago": "10日前",
   "12/24/25 · 11:05 AM": "2025年12月24日 11:05",
   "12/24/25, 3:01 AM": "2025年12月24日 3:01",
@@ -721,7 +721,7 @@ const translations: Record<string, string> = {
   "Jan 2": "1月2日",
   "January 2026": "2026年1月",
   
-  // 言語・国
+  // Languages & countries
   "English": "英語",
   "French": "フランス語",
   "German": "ドイツ語",
@@ -729,13 +729,13 @@ const translations: Record<string, string> = {
   "United Kingdom": "イギリス",
   "Japan": "日本",
   
-  // イージング
+  // Easing
   "Back In": "バックイン",
   "Back In Out": "バックインアウト",
   "Back Out": "バックアウト",
   "Bounce": "バウンス",
   
-  // 図形
+  // Shapes
   "Arc": "アーク",
   "Bezier": "ベジエ",
   "Oval": "楕円",
@@ -743,12 +743,12 @@ const translations: Record<string, string> = {
   "Rectangle": "長方形",
   "Squircle": "スクワークル",
 
-  // グラデーションタイプ
+  // Gradient types
   "Pointer": "ポインター",
   "Radial": "放射状",
   "Conic": "円錐形",
 
-  // ブレンドモード
+  // Blend modes
   "Blending": "ブレンド",
   "Normal": "通常",
   "Darken": "比較（暗）",
@@ -764,7 +764,7 @@ const translations: Record<string, string> = {
   "Exclusion": "除外",
   "Luminosity": "輝度",
 
-  // フィルター
+  // Filters
   "BG Blur": "背景ぼかし",
   "Contrast": "コントラスト",
   "Grayscale": "グレースケール",
@@ -772,7 +772,7 @@ const translations: Record<string, string> = {
   "Saturate": "彩度",
   "Sepia": "セピア",
 
-  // 3D・トランスフォーム
+  // 3D & transform
   "Composite": "コンポジット",
   "Mode": "モード",
   "Luminance": "輝度",
@@ -782,7 +782,7 @@ const translations: Record<string, string> = {
   "Backface": "裏面",
   "Preserve 3D": "3D保持",
 
-  // 位置アンカー
+  // Position anchors
   "Top Left": "左上",
   "Top Center": "上中央",
   "Top Right": "右上",
@@ -790,23 +790,23 @@ const translations: Record<string, string> = {
   "Bottom Center": "下中央",
   "Bottom Right": "右下",
 
-  // サイズ制約
+  // Size constraints
   "Min Width": "最小幅",
   "Min Height": "最小高さ",
   "Max Height": "最大高さ",
 
-  // オーバーフロー
+  // Overflow
   "Overflow X": "オーバーフロー X",
   "Overflow Y": "オーバーフロー Y",
 
-  // カーソル設定
+  // Cursor settings
   "Web Cursor": "Webカーソル",
   "Pick a default cursor": "デフォルトカーソルを選択",
   "Custom Cursor": "カスタムカーソル",
   "Pick a component": "コンポーネントを選択",
   "Animate your cursor": "カーソルをアニメーション",
 
-  // インタラクション
+  // Interaction types
   "Set Variant": "バリアントを設定",
   "Set Variable": "変数を設定",
   "Reset Variables": "変数をリセット",
@@ -818,31 +818,31 @@ const translations: Record<string, string> = {
   "Dropdowns popovers": "ドロップダウン/ポップオーバー",
   "Modals toasts videos": "モーダル/トースト/動画",
 
-  // フロー
+  // Flow
   "Flow": "フロー",
   "Effect": "エフェクト",
   "Flow Effect": "フローエフェクト",
 
-  // エクスポート
+  // Export
   "Export Image": "画像をエクスポート",
   "Export Stack": "スタックをエクスポート",
   "Fit Image": "画像をフィット",
   "Offset Y": "オフセットY",
 
-  // メニュー要素
+  // Menu elements
   "Menu Arrow": "メニュー矢印",
   "Menu Checkmark": "メニューチェックマーク",
 
-  // テキスト
+  // Text
   "Balance": "バランス",
   "Truncate": "省略",
 
-  // API・フェッチ
+  // API & fetch
   "Add Fetch": "フェッチを追加",
   "Fetch": "フェッチ",
   "Advanced": "詳細設定",
 
-  // ワークスペース
+  // Workspace
   "Personal": "個人",
   "All Workspaces": "すべてのワークスペース",
   "Add Workspace": "ワークスペースを追加",
@@ -872,14 +872,14 @@ const translations: Record<string, string> = {
   "Default as Editor": "デフォルトで編集者",
   "You can't delete your only workspace.": "唯一のワークスペースは削除できません。",
 
-  // 招待
+  // Invitations
   "Invite Editors": "編集者を招待",
   "Send Invites": "招待を送信",
   "Copy Invite Link": "招待リンクをコピー",
   "Invite via Link": "リンクで招待",
   "Invite via Email": "メールで招待",
 
-  // ロール・権限
+  // Roles & permissions
   "Viewer": "閲覧者",
   "Project Editor": "プロジェクト編集者",
   "Roles": "役割",
@@ -889,7 +889,7 @@ const translations: Record<string, string> = {
   "Remove from team": "チームから削除",
   "Will remove all team access": "すべてのチームアクセスが削除されます",
 
-  // アカウント・プロフィール
+  // Account & profile
   "Account": "アカウント",
   "Profile": "プロフィール",
   "Sessions": "セッション",
@@ -903,7 +903,7 @@ const translations: Record<string, string> = {
   "Unknown Client": "不明なクライアント",
   "Unknown location": "不明な場所",
 
-  // UI・アップロード
+  // UI & upload
   "Upload Logo": "ロゴをアップロード",
   "Upload Image": "画像をアップロード",
   "Please upload an image that is": "以下の条件の画像をアップロードしてください",
@@ -919,7 +919,7 @@ const translations: Record<string, string> = {
   "See Terms": "利用規約を確認",
   "Continue": "続ける",
 
-  // モード・その他
+  // Modes & misc
   "Day Mode": "デイモード",
   "Support": "サポート",
   "Employees Only": "従業員専用",
@@ -928,7 +928,7 @@ const translations: Record<string, string> = {
   "You": "あなた",
   "upgrade": "アップグレード",
 
-  // アクセシビリティ
+  // Accessibility
   "Accessibility Tips": "アクセシビリティのヒント",
   "Aria Label": "Ariaラベル",
   "Tab Index": "タブインデックス",
@@ -937,7 +937,7 @@ const translations: Record<string, string> = {
   "Include (default)": "含める（デフォルト）",
   "Skip": "スキップ",
 
-  // キャンバス・ページ
+  // Canvas & pages
   "Canvas": "キャンバス",
   "Site Settings": "サイト設定",
   "Landing Page": "ランディングページ",
@@ -946,7 +946,7 @@ const translations: Record<string, string> = {
   "No Sections": "セクションなし",
   "Main": "メイン",
 
-  // プロジェクトフィールド（CMSポートフォリオ）
+  // CMS portfolio fields
   "Work": "実績",
   "Project Thumbnail Title": "プロジェクトサムネイルタイトル",
   "Main Image / Thumbnail Image": "メイン画像 / サムネイル画像",
@@ -972,7 +972,7 @@ const translations: Record<string, string> = {
   "Content fields can be": "コンテンツフィールドは",
   "used on detail pages": "詳細ページで使用できます",
 
-  // アニメーション・プリセット
+  // Animation presets
   "On Appear": "表示時",
   "On Scroll": "スクロール時",
   "Layer in View": "レイヤーが表示されたとき",
@@ -999,13 +999,13 @@ const translations: Record<string, string> = {
   "Slide Out Right": "右へスライドアウト",
   "Slide Out Bottom": "下へスライドアウト",
 
-  // 方向
+  // Directions
   "Up": "上",
   "Down": "下",
   "2D": "2D",
   "Offset": "オフセット",
 
-  // インタラクション種別
+  // Interaction types
   "Dropdowns": "ドロップダウン",
   "popovers": "ポップオーバー",
   "Modals": "モーダル",
@@ -1014,10 +1014,10 @@ const translations: Record<string, string> = {
   "Collision": "衝突",
   "Editing": "編集中",
 
-  // エクスポート
+  // Export (overlays)
   "Export Overlay": "オーバーレイをエクスポート",
 
-  // UI
+  // UI components
   "Icons": "アイコン",
   "Body Default": "本文（デフォルト）",
   "Design 2": "デザイン2",
@@ -1025,7 +1025,7 @@ const translations: Record<string, string> = {
   "Visit Website": "ウェブサイトを訪問",
   "Emoji Happy": "絵文字（ハッピー）",
 
-  // メニュー・ツールバー
+  // Menu & toolbar
   "Quick Actions": "クイックアクション",
   "Tool": "ツール",
   "Help": "ヘルプ",
@@ -1038,7 +1038,7 @@ const translations: Record<string, string> = {
   "Typography": "タイポグラフィ",
   "Style": "スタイル",
 
-  // ページ操作
+  // Page operations
   "New Page": "新規ページ",
   "New Page Folder": "新規ページフォルダー",
   "Sort Pages Alphabetically": "ページをアルファベット順に並び替え",
@@ -1054,7 +1054,7 @@ const translations: Record<string, string> = {
   "Anyone can view": "誰でも閲覧可能",
   "Work Pages": "実績ページ",
 
-  // 編集・選択
+  // Edit & selection
   "Cut": "切り取り",
   "Forward": "前面へ",
   "Find Content": "コンテンツを検索",
@@ -1071,7 +1071,7 @@ const translations: Record<string, string> = {
   "Add yourself as an editor": "編集者として追加",
   "Use Direct Selection": "直接選択を使用",
 
-  // 表示
+  // View options
   "Zoom In": "ズームイン",
   "Zoom Out": "ズームアウト",
   "Zoom to Selection": "選択範囲にズーム",
@@ -1093,7 +1093,7 @@ const translations: Record<string, string> = {
   "Show NUX Steps": "NUXステップを表示",
   "Show Templates on New Project": "新規プロジェクトでテンプレートを表示",
 
-  // Figmaインポート
+  // Figma import
   "Paste from Figma": "Figmaから貼り付け",
   "Read the guide": "ガイドを読む",
   "install the plugin": "プラグインをインストール",
@@ -1101,7 +1101,7 @@ const translations: Record<string, string> = {
   "Paste layers to Framer with": "Framerにレイヤーを貼り付け",
   "Get Plugin": "プラグインを入手",
 
-  // レイヤー操作
+  // Layer operations
   "Add Frame": "フレームを追加",
   "Add Stack": "スタックを追加",
   "Remove Wrapper": "ラッパーを削除",
@@ -1112,7 +1112,7 @@ const translations: Record<string, string> = {
   "Send to Back": "最背面に移動",
   "Export Desktop": "デスクトップにエクスポート",
 
-  // コピー・ペースト
+  // Copy & paste
   "Copy Style": "スタイルをコピー",
   "Copy Fill": "塗りをコピー",
   "Copy Link": "リンクをコピー",
@@ -1127,7 +1127,7 @@ const translations: Record<string, string> = {
   "Paste Effects": "エフェクトを貼り付け",
   "Paste Cursor": "カーソルを貼り付け",
 
-  // ツール
+  // Tools
   "Sample Color": "カラーサンプル",
   "System Default": "システムデフォルト",
   "Grid Span": "グリッドスパン",
@@ -1136,7 +1136,7 @@ const translations: Record<string, string> = {
   "Freeform": "フリーフォーム",
   "Mirror": "ミラー",
 
-  // コンポーネント
+  // Components
   "Create Component…": "コンポーネントを作成…",
   "Create From Code…": "コードから作成…",
   "Create Code Component…": "コードコンポーネントを作成…",
@@ -1148,7 +1148,7 @@ const translations: Record<string, string> = {
   "New Override": "新規オーバーライド",
   "Create": "作成",
 
-  // プラグイン・開発
+  // Plugins & development
   "Browse All": "すべて閲覧",
   "Run Recent Plugin": "最近のプラグインを実行",
   "Clear Recent Plugins": "最近のプラグインをクリア",
@@ -1173,7 +1173,7 @@ const translations: Record<string, string> = {
   "Stable": "安定版",
   "Browse Marketplace": "マーケットプレイスを閲覧",
 
-  // 環境設定
+  // Preferences
   "Auto Layout Pinning": "自動レイアウト固定",
   "Reverse Zoom Direction": "ズーム方向を反転",
   "Fast Zoom": "高速ズーム",
@@ -1186,14 +1186,14 @@ const translations: Record<string, string> = {
   "Nudge Amount": "ナッジ量",
   "Performance Mode": "パフォーマンスモード",
 
-  // ヘルプ
+  // Help
   "Start App Tour": "アプリツアーを開始",
   "Request Feature": "機能リクエスト",
   "Join Community": "コミュニティに参加",
   "Keyboard Shortcuts": "キーボードショートカット",
   "Copy Version Number": "バージョン番号をコピー",
 
-  // 変数・条件
+  // Variables & conditions
   "Convert": "変換",
   "Is Set": "設定済み",
   "Isn't Set": "未設定",
@@ -1204,7 +1204,7 @@ const translations: Record<string, string> = {
   "When No": "いいえの場合",
   "REM Typography": "REMタイポグラフィ",
 
-  // アニメーション・エフェクト
+  // Animation effects
   "Appear Effect": "出現エフェクト",
   "Enter Effect": "登場エフェクト",
   "Hover Effect": "ホバーエフェクト",
@@ -1218,13 +1218,13 @@ const translations: Record<string, string> = {
   "Animate nested sections": "ネストされたセクションをアニメーション",
   "Updating Pages": "ページを更新中",
 
-  // ストローク・境界線スタイル
+  // Stroke styles
   "Solid": "実線",
   "Dashed": "破線",
   "Dotted": "点線",
   "Double": "二重線",
 
-  // その他プロパティ
+  // Other properties
   "Stretch": "ストレッチ",
   "Alt Text": "代替テキスト",
   "Preserve": "保持",
@@ -1235,12 +1235,12 @@ const translations: Record<string, string> = {
   "Export Inner Content": "内部コンテンツをエクスポート",
   "Watch Video": "動画を見る",
 
-  // コンテンツタイプ
+  // Content types
   "New with AI": "AIで新規作成",
   "Blockquote": "引用",
   "Table": "テーブル",
 
-  // プロジェクト・フォルダー
+  // Projects & folders
   "Folder": "フォルダー",
   "New Folder…": "フォルダーを新規作成…",
   "New Project": "新規プロジェクト",
@@ -1252,11 +1252,11 @@ const translations: Record<string, string> = {
   "Team members": "チームメンバー",
   "Invite your team": "チームを招待",
 
-  // 貼り付け・インポート
+  // Paste & import
   "HTML Paste": "HTML貼り付け",
   ") when navigating between pages": "）ページ間のナビゲーション時",
 
-  // アナリティクス・API
+  // Analytics & API
   "Google Analytics Measurement ID": "GoogleアナリティクスのID",
   "API Keys": "APIキー",
   "Add API Key": "APIキーを追加",
@@ -1266,7 +1266,7 @@ const translations: Record<string, string> = {
   "track and view insights.": "インサイトを追跡・確認しましょう。",
   "View Analytics": "アナリティクスを表示",
 
-  // A/Bテスト
+  // A/B testing
   "A/B test": "A/Bテスト",
   "Control": "コントロール",
   "Select the page that you want to test.": "テストするページを選択してください。",
@@ -1275,7 +1275,7 @@ const translations: Record<string, string> = {
   "New A/B Test…": "A/Bテストを新規作成…",
   "Add Variant": "バリアントを追加",
 
-  // ページ管理
+  // Page management
   "Home Page": "ホームページ",
   "Set Home Page": "ホームページに設定",
   "Template Page": "テンプレートページ",
@@ -1285,51 +1285,51 @@ const translations: Record<string, string> = {
   "Select a page to replace": "置き換えるページを選択",
   "Convert to CMS Page…": "CMSページに変換…",
 
-  // カルーセル（#付きフォーマット）
+  // Carousel (hash format)
   "Carousel Image #1": "カルーセル画像1",
   "Carousel Image #2": "カルーセル画像2",
   "Carousel Image #3": "カルーセル画像3",
   "Carousel Image #4": "カルーセル画像4",
 };
 
-// 重複処理防止：翻訳済みのノードを記録
+// Deduplication: track already-translated nodes
 const translatedNodes = new WeakSet<Node>();
 const unknownWords = new Set<string>();
 
 /**
- * window.missingList を更新（コンソールからアクセス用）
+ * Update window.missingList for console access
  */
 const updateMissingList = () => {
   (window as any).missingList = Array.from(unknownWords).sort();
 };
 
 /**
- * 翻訳の実行エンジン
+ * Translation engine
  */
 const translate = () => {
   const walker = document.createTreeWalker(document.body, NodeFilter.SHOW_TEXT);
   let node: Node | null;
 
   while (node = walker.nextNode()) {
-    // 翻訳済みの場合はスキップ
+    // Skip already-translated nodes
     if (translatedNodes.has(node)) continue;
 
     const text = node.nodeValue?.trim();
     if (!text || text.length < 2) continue;
 
-    // 1. 辞書にヒットする場合
+    // 1. Dictionary match
     if (translations[text]) {
       const translatedText = translations[text];
       if (node.nodeValue !== translatedText) {
         node.nodeValue = translatedText;
         translatedNodes.add(node);
-        // 親に属性を付与（任意）
+        // Mark parent element as translated
         if (node.parentElement) {
           node.parentElement.setAttribute("data-translated", "true");
         }
       }
     } 
-    // 2. 辞書にない英語ラベル（未翻訳発見ログ）
+    // 2. Unknown English label — log as missing
     else if (/[a-zA-Z]/.test(text) && text.length < 40) {
       if (!unknownWords.has(text)) {
         unknownWords.add(text);
@@ -1341,7 +1341,7 @@ const translate = () => {
 };
 
 /**
- * MutationObserver による動的監視
+ * MutationObserver for dynamic content
  */
 const observer = new MutationObserver((mutations) => {
   let shouldProcess = false;
@@ -1354,15 +1354,15 @@ const observer = new MutationObserver((mutations) => {
   if (shouldProcess) translate();
 });
 
-// 監視開始
+// Start observing
 observer.observe(document.body, {
   childList: true,
   subtree: true
 });
 
-// 初期実行
+// Initial run
 translate();
 updateMissingList();
 
-// バックグラウンドでの定期実行（安全策）
+// Periodic fallback run
 setInterval(translate, 3000);
