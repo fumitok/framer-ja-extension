@@ -387,7 +387,6 @@ const translations: Record<string, string> = {
   "Carousel": "カルーセル",
   "Changelog Page": "変更履歴ページ",
   "Chrome Extension": "Chrome拡張機能",
-  "Client": "クライアント",
   "Code Block": "コードブロック",
   "Code Overrides": "コードオーバーライド",
   "Collection": "コレクション",
