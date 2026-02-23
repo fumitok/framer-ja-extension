@@ -389,7 +389,6 @@ const translations: Record<string, string> = {
   "Chrome Extension": "Chrome拡張機能",
   "Code Block": "コードブロック",
   "Code Overrides": "コードオーバーライド",
-  "Collection": "コレクション",
   "Collections": "コレクション",
   "Colors": "色",
   "Columns": "列",
