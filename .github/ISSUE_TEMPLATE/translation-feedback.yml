@@ -1,0 +1,43 @@
+name: 翻訳フィードバック
+description: 日本語訳の誤りや改善提案を報告する
+labels: ["translation"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        > **注意**
+        > このエクステンションは非公式のコミュニティプロジェクトです。Framerが公式に製品の動作を完全に保証するものではありません。
+
+        翻訳の誤りや改善提案のみを対象としています。製品のバグや機能リクエストはこちらでは受け付けていません。
+
+  - type: input
+    id: original
+    attributes:
+      label: 元の英語テキスト
+      placeholder: 例) Line Height
+    validations:
+      required: true
+
+  - type: input
+    id: current
+    attributes:
+      label: 現在の日本語訳
+      placeholder: 例) 線の高さ
+    validations:
+      required: true
+
+  - type: input
+    id: suggested
+    attributes:
+      label: 提案する日本語訳
+      placeholder: 例) 行の高さ
+    validations:
+      required: true
+
+  - type: textarea
+    id: reason
+    attributes:
+      label: 理由・補足
+      placeholder: なぜこの訳が適切か、参考資料があれば記載してください。
+    validations:
+      required: false
