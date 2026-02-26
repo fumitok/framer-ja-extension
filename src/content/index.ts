@@ -519,7 +519,7 @@ const translations: Record<string, string> = {
   "Light": "ライト",
   "Light Theme": "ライトテーマ",
   "Lightbox": "ライトボックス",
-  "Line": "線",
+  "Line": "行",
   "Linear": "リニア",
   "Link": "リンク",
   "Link To": "リンク先",
