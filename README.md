@@ -82,6 +82,10 @@ npm run build
 cd dist && zip -r ../framer-ja-extension.zip . && cd ..
 ```
 
+## Disclaimer
+
+This is an unofficial community extension and is not affiliated with or endorsed by Framer. Framer does not officially guarantee complete product behavior through this extension, and translations may become outdated as Framer updates its interface.
+
 ## License
 
 MIT
